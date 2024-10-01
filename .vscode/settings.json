@@ -1,0 +1,7 @@
+{
+    "editor.fontFamily": "Mono Lisa",
+    "editor.fontSize": 22,
+    "terminal.integrated.fontSize": 20,
+    "window.zoomLevel": 0.5,
+    "editor.wordWrap": "on",
+}
