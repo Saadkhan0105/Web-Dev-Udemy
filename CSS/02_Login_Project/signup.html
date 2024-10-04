@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <style>
+        .form-container {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.name-surname-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-surname-container input {
+  width: 48%;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+  <h2>Sign-Up</h2>
+  
+  <form>
+    <input type="email" placeholder="Email" />
+    
+    <div class="name-surname-container">
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Surname" />
+    </div>
+    
+    <input type="password" placeholder="Password" />
+    
+    <button type="submit">Sign-Up</button>
+  </form>
+</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.carousel {
+    width: 80%;
+    height: 200px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 2px solid #fff;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0f56b3;
+}
+
+footer {
+    border-top: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carousel">
+            <h2>Carousel</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>youtube</h3>
+                <p>card</p>
+                <button>watch now</button>
+            </div>
+            <div class="card">
+                <h3>youtube</h3>
+                <p>card</p>
+                <button>watch now</button>
+            </div>
+            <div class="card">
+                <h3>youtube</h3>
+                <p>card</p>
+                <button>watch now</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Saad Khan</p>
+        </footer>
+    </div>
+</body>
+</html>
