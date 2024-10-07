@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.product-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.bestseller {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+}
+
+.brown { background-color: #8B4513; }
+.orange { background-color: #FF8C00; }
+.red { background-color: #FF4500; }
+.black { background-color: #000; }
+
+.price {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: grey;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  color: red;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.buy-now, .wishlist {
+  background-color: #FF4C4C;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wishlist {
+  background-color: #333;
+}
+
+.buy-now:hover, .wishlist:hover {
+  opacity: 0.8;
+}
