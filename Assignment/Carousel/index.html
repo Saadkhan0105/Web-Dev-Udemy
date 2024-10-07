@@ -3,101 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage</title>
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-.carousel {
-    width: 80%;
-    height: 200px;
-    border: 2px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.cards {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin-bottom: 20px;
-}
-
-.card {
-    border: 2px solid #fff;
-    padding: 20px;
-    text-align: center;
-    width: 30%;
-}
-
-button {
-    background-color: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #0f56b3;
-}
-
-footer {
-    border-top: 1px solid #fff;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-}
-
-    </style>
+    <title>Bootstrap Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="carousel">
-            <h2>Carousel</h2>
-        </div>
+    <div class="container mt-5">
+       <div id="logoCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+    
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" style="height: 150px;">
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo" style="height: 150px;">
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" style="height: 150px;">
+                    </div>
+                </div>
+            </div>
 
-        <div class="cards">
-            <div class="card">
-                <h3>youtube</h3>
-                <p>card</p>
-                <button>watch now</button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#logoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#logoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+</div>
+
+        <div class="row text-center">
+            <!-- HTML Tutorial Card -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-light mb-4">
+                    <img src="https://img.youtube.com/vi/UB1O30fR-EE/0.jpg" class="card-img-top" alt="HTML Tutorial Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML Tutorial</h5>
+                        <a href="https://www.youtube.com/playlist?list=PLu71SKxNbfoDBNF5s-WH6aLbthSEIMhMI" class="btn btn-primary" target="_blank">Watch Now</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>youtube</h3>
-                <p>card</p>
-                <button>watch now</button>
+            <!-- CSS Tutorial Card -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-light mb-4">
+                    <img src="https://img.youtube.com/vi/yfoY53QXEnI/0.jpg" class="card-img-top" alt="CSS Tutorial Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS Tutorial</h5>
+                        <a href="https://www.youtube.com/watch?v=yfoY53QXEnI" class="btn btn-primary" target="_blank">Watch Now</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>youtube</h3>
-                <p>card</p>
-                <button>watch now</button>
+            <!-- JavaScript Tutorial Card -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-light mb-4">
+                    <img src="https://img.youtube.com/vi/W6NZfCO5SIk/0.jpg" class="card-img-top" alt="JavaScript Tutorial Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript Tutorial</h5>
+                        <a href="https://www.youtube.com/watch?v=W6NZfCO5SIk" class="btn btn-primary" target="_blank">Watch Now</a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <footer>
-            <p>&copy; Saad Khan</p>
-        </footer>
     </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p>&copy; Saad Khan</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

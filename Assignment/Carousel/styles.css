@@ -1,0 +1,26 @@
+body {
+    background-color: #111;
+    color: white;
+}
+
+.carousel-inner {
+    background-color: #222;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.card {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+footer {
+    border-top: 1px solid white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
