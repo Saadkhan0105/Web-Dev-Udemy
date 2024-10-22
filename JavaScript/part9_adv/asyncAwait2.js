@@ -1,3 +1,6 @@
+// Async Await is a newer way to write asynchronous code in JavaScript. It makes use of the Promise object to handle asynchronous operations.
+
+// Here's an example of how to fetch blog data using Async Await:
 function fetchPostData(){
     return new Promise((resolve) => {
         setTimeout(() => {

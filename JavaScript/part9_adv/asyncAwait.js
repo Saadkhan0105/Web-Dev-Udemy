@@ -1,3 +1,6 @@
+// Async Await: Async Await is a new feature in JavaScript that allows developers to write asynchronous code that looks like synchronous code. It is a way to handle asynchronous operations like reading or writing files, making HTTP requests, and more.
+
+// Example: Fetching User Data using Async Await
 function fetchUserData(){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
