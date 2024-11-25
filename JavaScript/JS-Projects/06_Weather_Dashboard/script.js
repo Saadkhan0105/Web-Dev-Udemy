@@ -1,6 +1,6 @@
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
-  const API_KEY = "5f56d525d1619d0a2cd2eac4ce55588e"; // Replace with your OpenWeather API Key
+  const API_KEY = "b06e0e036db678c5406b41dd990487ea"; // Replace with your OpenWeather API Key
   const cityInput = document.getElementById("city-input");
   const addCityBtn = document.getElementById("add-city-btn");
   const cityList = document.getElementById("city-list");
