@@ -1,0 +1,8 @@
+2024-11-25T12:12:17.923Z - Application started
+2024-11-25T12:12:17.927Z - Application event occurred
+2024-11-25T12:12:20.924Z - Hello World
+2024-11-25T12:12:23.925Z - Hello World
+2024-11-25T12:12:26.927Z - Hello World
+2024-11-25T12:12:29.928Z - Hello World
+2024-11-25T12:12:32.928Z - Hello World
+2024-11-25T12:12:35.929Z - Hello World
