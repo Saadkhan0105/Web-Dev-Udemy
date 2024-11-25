@@ -21,6 +21,7 @@ logger.on('messageLogged', logToFile);
 
 setInterval(() => {
     const memoryUsage = (os.freemem() / os.totalmem()) * 100;
+    logger.log(`Current memory usage: ${memoryUsage.toFixed(2)}`);
     logger.log('Hello World');
 }, 3000);
 

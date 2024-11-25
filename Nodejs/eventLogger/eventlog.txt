@@ -6,3 +6,13 @@
 2024-11-25T12:12:29.928Z - Hello World
 2024-11-25T12:12:32.928Z - Hello World
 2024-11-25T12:12:35.929Z - Hello World
+2024-11-25T12:15:42.266Z - Application started
+2024-11-25T12:15:42.270Z - Application event occurred
+2024-11-25T12:15:45.267Z - Current memory usage: 1.79
+2024-11-25T12:15:45.268Z - Hello World
+2024-11-25T12:15:48.269Z - Current memory usage: 1.56
+2024-11-25T12:15:48.270Z - Hello World
+2024-11-25T12:15:51.271Z - Current memory usage: 1.82
+2024-11-25T12:15:51.273Z - Hello World
+2024-11-25T12:15:54.272Z - Current memory usage: 1.70
+2024-11-25T12:15:54.273Z - Hello World
