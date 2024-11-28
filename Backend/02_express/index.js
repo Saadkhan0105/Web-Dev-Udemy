@@ -56,7 +56,7 @@ app.delete("/teas/:id", (req, res) => {
     return res.status(404).send("tea not found");
   }
   teaData.splice(index, 1);
-  res.status(200).send("Tea has been successfullydeleted");
+  res.status(200).send("Tea has been successfully deleted");
 });
 
 app.listen(port, () => {
