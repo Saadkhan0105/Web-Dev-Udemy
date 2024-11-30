@@ -1,8 +1,8 @@
-
+import 'dotenv/config';
 import express from "express";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.use(express.json());
 
 let teaData = [];
@@ -33,7 +33,6 @@ app.get("/teas/:id", (req, res) => {
 });
 
 //update tea
-
 app.put("/teas/:id", (req, res) => {
   const tea = teaData.find((t) => t.id === parseInt(req.params.id));
 
@@ -47,7 +46,6 @@ app.put("/teas/:id", (req, res) => {
 });
 
 //delete tea
-
 app.delete("/teas/:id", (req, res) => {
   console.log("delete");
   console.log(req.params.id);
@@ -62,3 +60,5 @@ app.delete("/teas/:id", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running at port: ${port}...`);
 });
+
+
