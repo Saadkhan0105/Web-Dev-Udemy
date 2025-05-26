@@ -2,22 +2,21 @@ import { getDataFromToken } from "@/helpers/getDataFromToken";
 
 import { NextRequest, NextResponse } from "next/server";
 import User from "@/models/userModel";
-import { connectDB } from "@/dbConfig/dbConfig";
-import { get } from "http";
+import { connect } from "@/dbConfig/dbConfig";
 
-connectDB();
+connect();
 
-export async function GET(request: NextRequest) {
+export async function GET(request:NextRequest){
+
     try {
-        const userID = await getDataFromToken(request);
-        const user = await User.findOne({ _id: userID }).select("-password -__v");
+        const userId = await getDataFromToken(request);
+        const user = await User.findOne({_id: userId}).select("-password");
         return NextResponse.json({
-            message: "User details fetched successfully",
-            success: true,
+            mesaaage: "User found",
             data: user
         })
-    } catch (error: any) {
-        return NextResponse.json({ message: error.message }, { status: 500 });
-        
+    } catch (error:any) {
+        return NextResponse.json({error: error.message}, {status: 400});
     }
+
 }
