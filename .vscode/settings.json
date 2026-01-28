@@ -1,7 +1,10 @@
 {
-    "editor.fontFamily": "Mono Lisa",
-    "editor.fontSize": 22,
-    "terminal.integrated.fontSize": 20,
-    "window.zoomLevel": 0.5,
-    "editor.wordWrap": "on",
+  "editor.fontFamily": "Mono Lisa",
+  "editor.fontSize": 22,
+  "terminal.integrated.fontSize": 20,
+  "window.zoomLevel": 0.5,
+  "editor.wordWrap": "on",
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda",
+  "python-envs.pythonProjects": []
 }
